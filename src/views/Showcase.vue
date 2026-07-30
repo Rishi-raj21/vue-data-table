@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="page-background">
 
     <div class="text-center mb-8">
 
@@ -7,7 +7,7 @@
         Data Table Showcase
       </h1>
 
-      <p class="text-subtitle-1 mt-2">
+      <p class="text-grey-darken-1 mt-2">
         Reusable Vue 3 + Vuetify Data Table Component
       </p>
 
@@ -15,73 +15,243 @@
 
 
     <v-card
-      class="mb-8"
-      elevation="3"
-      rounded="lg"
+      class="mb-11"
+      elevation="2"
+      rounded="xl"
     >
 
+    <v-row class="pa-4">
+
+  <v-col cols="12" md="4">
+    <v-card elevation="2" rounded="xl" class="pa-4">
+      <div class="text-grey">
+        Total Items in Stock
+      </div>
+
+      <div class="text-h4 font-weight-bold">
+        {{ totalItemsInStock }}
+      </div>
+    </v-card>
+  </v-col>
+
+
+  <v-col cols="12" md="4">
+    <v-card elevation="2" rounded="xl" class="pa-4">
+      <div class="text-grey">
+        Low Stock Items
+      </div>
+
+      <div class="text-h4 font-weight-bold">
+        {{ lowStockItems }}
+      </div>
+    </v-card>
+  </v-col>
+
+
+  <v-col cols="12" md="4">
+    <v-card elevation="2" rounded="xl" class="pa-4">
+      <div class="text-grey">
+        Total Inventory Value
+      </div>
+
+      <div class="text-h4 font-weight-bold">
+        ₹{{ totalInventoryValue }}
+      </div>
+    </v-card>
+  </v-col>
+
+</v-row>
       <BaseDataTable
         title="Inventory Management"
         :columns="inventoryColumns"
         :items="inventory"
       />
-
     </v-card>
-
 
 
     <v-card
       class="mb-8"
-      elevation="3"
-      rounded="lg"
+      elevation="2"
+      rounded="xl"
     >
+
+    <v-row class="pa-4">
+
+  <v-col cols="12" md="4">
+    <v-card elevation="2" rounded="xl" class="pa-4">
+      <div class="text-grey">
+        Total Transactions
+      </div>
+
+      <div class="text-h4 font-weight-bold">
+        {{ totalTransactions }}
+      </div>
+    </v-card>
+  </v-col>
+
+
+  <v-col cols="12" md="4">
+    <v-card elevation="2" rounded="xl" class="pa-4">
+      <div class="text-grey">
+        Completed Transactions
+      </div>
+
+      <div class="text-h4 font-weight-bold">
+        {{ completedTransactions }}
+      </div>
+    </v-card>
+  </v-col>
+
+
+  <v-col cols="12" md="4">
+    <v-card elevation="2" rounded="xl" class="pa-4">
+      <div class="text-grey">
+        Total Transaction Amount
+      </div>
+
+      <div class="text-h4 font-weight-bold">
+        ₹{{ totalTransactionAmount }}
+      </div>
+    </v-card>
+  </v-col>
+
+</v-row>
 
       <BaseDataTable
         title="Financial Transactions"
         :columns="transactionColumns"
         :items="transactions"
       />
-
     </v-card>
-
 
 
     <v-card
       class="mb-8"
-      elevation="3"
-      rounded="lg"
+      elevation="2"
+      rounded="xl"
     >
+    <v-row class="pa-4">
 
+  <v-col cols="12" md="4">
+    <v-card elevation="2" rounded="xl" class="pa-4">
+      <div class="text-grey">
+        Total Tasks
+      </div>
+
+      <div class="text-h4 font-weight-bold">
+        {{ totalTasks }}
+      </div>
+    </v-card>
+  </v-col>
+
+
+  <v-col cols="12" md="4">
+    <v-card elevation="2" rounded="xl" class="pa-4">
+      <div class="text-grey">
+        Completed Tasks
+      </div>
+
+      <div class="text-h4 font-weight-bold">
+        {{ completedTasks }}
+      </div>
+    </v-card>
+  </v-col>
+
+
+  <v-col cols="12" md="4">
+    <v-card elevation="2" rounded="xl" class="pa-4">
+      <div class="text-grey">
+        Completion Percentage
+      </div>
+
+      <div class="text-h4 font-weight-bold">
+        {{ completionPercentage }}%
+      </div>
+    </v-card>
+  </v-col>
+
+</v-row>
       <BaseDataTable
         title="Task / Project Management"
         :columns="taskColumns"
         :items="tasks"
       />
-
     </v-card>
-
 
 
     <v-card
       class="mb-8"
-      elevation="3"
-      rounded="lg"
+      elevation="2"
+      rounded="xl"
     >
+
+    <v-row class="pa-4">
+
+  <v-col cols="12" md="4">
+    <v-card elevation="2" rounded="xl" class="pa-4">
+      <div class="text-grey">
+        Total Tickets
+      </div>
+
+      <div class="text-h4 font-weight-bold">
+        {{ totalTickets }}
+      </div>
+    </v-card>
+  </v-col>
+
+
+  <v-col cols="12" md="4">
+    <v-card elevation="2" rounded="xl" class="pa-4">
+      <div class="text-grey">
+        Open Tickets
+      </div>
+
+      <div class="text-h4 font-weight-bold">
+        {{ openTickets }}
+      </div>
+    </v-card>
+  </v-col>
+
+
+  <v-col cols="12" md="4">
+    <v-card elevation="2" rounded="xl" class="pa-4">
+      <div class="text-grey">
+        Resolved Tickets
+      </div>
+
+      <div class="text-h4 font-weight-bold">
+        {{ resolvedTickets }}
+      </div>
+    </v-card>
+  </v-col>
+
+</v-row>
 
       <BaseDataTable
         title="Customer Support Tickets"
         :columns="ticketColumns"
         :items="tickets"
       />
-
     </v-card>
 
 
   </v-container>
 </template>
 
+
+<style scoped>
+
+.page-background {
+  min-height: 100vh;
+  padding-top: 40px 24px;
+}
+
+</style>
+
 <script setup>
 
+
+import { computed } from "vue"
 import BaseDataTable from "../components/BaseDataTable.vue"
 
 
@@ -93,6 +263,7 @@ const inventoryColumns = [
   { title:"Stock", key:"stock" },
   { title:"Price", key:"price" }
 ]
+
 
 
 const inventory = [
@@ -117,6 +288,24 @@ const inventory = [
   {id:19, product:"Charger", category:"Accessories", stock:65, price:1200},
   {id:20, product:"Projector", category:"Office", stock:8, price:45000}
 ]
+
+const totalItemsInStock = computed(() => {
+  return inventory.reduce((total, item) => {
+    return total + item.stock
+  }, 0)
+})
+
+
+const lowStockItems = computed(() => {
+  return inventory.filter(item => item.stock < 15).length
+})
+
+
+const totalInventoryValue = computed(() => {
+  return inventory.reduce((total, item) => {
+    return total + (item.stock * item.price)
+  }, 0)
+})
 
 
 // ================= FINANCIAL TRANSACTIONS =================
@@ -151,6 +340,22 @@ const transactions = [
   {id:19, transactionId:"TXN019", user:"Aditya", amount:4800, status:"Pending"},
   {id:20, transactionId:"TXN020", user:"Ayesha", amount:7100, status:"Completed"}
 ]
+
+const totalTransactions = computed(() => {
+  return transactions.length
+})
+
+
+const completedTransactions = computed(() => {
+  return transactions.filter(transaction => transaction.status === "Completed").length
+})
+
+
+const totalTransactionAmount = computed(() => {
+  return transactions.reduce((total, transaction) => {
+    return total + transaction.amount
+  }, 0)
+})
 // ================= TASK / PROJECT MANAGEMENT =================
 
 const taskColumns = [
@@ -183,6 +388,19 @@ const tasks = [
   {id:19, task:"Final Testing", assignedTo:"Aditya", priority:"High", status:"Completed"},
   {id:20, task:"Project Report", assignedTo:"Ayesha", priority:"Low", status:"Pending"}
 ]
+const totalTasks = computed(() => {
+  return tasks.length
+})
+
+
+const completedTasks = computed(() => {
+  return tasks.filter(task => task.status === "Completed").length
+})
+
+
+const completionPercentage = computed(() => {
+  return Math.round((completedTasks.value / totalTasks.value) * 100)
+})
 
 
 // ================= CUSTOMER SUPPORT TICKETS =================
@@ -217,5 +435,19 @@ const tickets = [
   {id:19, ticketId:"T019", customer:"Aditya", issue:"Delivery Issue", status:"Resolved"},
   {id:20, ticketId:"T020", customer:"Ayesha", issue:"Refund Delay", status:"Open"}
 ]
+
+const totalTickets = computed(() => {
+  return tickets.length
+})
+
+
+const openTickets = computed(() => {
+  return tickets.filter(ticket => ticket.status === "Open").length
+})
+
+
+const resolvedTickets = computed(() => {
+  return tickets.filter(ticket => ticket.status === "Resolved").length
+})
 
 </script>
