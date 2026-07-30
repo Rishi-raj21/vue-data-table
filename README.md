@@ -1,58 +1,54 @@
-# Reusable Data Table Application
+# 🚀 Vue 3 + Vuetify Data Table Showcase
 
-A reusable Data Table application built using **Vue 3**, **Vuetify**, and **Vite**. This project demonstrates reusable component design with modern frontend development practices.
+A reusable and responsive Data Table application built using Vue 3, Vuetify, and Vite. The project demonstrates CRUD operations, sorting, searching, pagination, local storage, and executive summary dashboards across multiple datasets.
 
-## Features
+## 🌐 Live Demo
 
-- Reusable `BaseDataTable` component
-- Dynamic columns using Props
-- Search functionality
-- Client-side sorting
+https://vue-data-table-al9t-fxbi04ja5-rishi-raj22.vercel.app
+
+## ✨ Features
+
+- Reusable Data Table Component
+- Search Functionality
+- Column Sorting
 - Pagination
-- Add new records
-- Edit existing records
-- Delete records
+- Add New Records
+- Edit Existing Records
+- Delete Records
 - Executive Summary Dashboard
-- Live metrics using Computed Properties
-- Reactive UI updates
-- Local Storage persistence
-- Responsive UI using Vuetify
+- Local Storage Persistence
+- Responsive UI
+- Multiple Showcase Datasets
 
-## Datasets
+## 📊 Showcase Modules
 
-The reusable table is demonstrated using four different datasets:
+- Inventory Management
+- Financial Transactions
+- Project Task Management
+- Customer Support Tickets
 
-- 📦 Inventory Management
-- 💳 Financial Transactions
-- 📋 Task / Project Management
-- 🎫 Customer Support Tickets
-
-## Tech Stack
+## 🛠️ Tech Stack
 
 - Vue 3
 - Vuetify
 - Vite
 - JavaScript
+- Local Storage
 
-## Installation
+## 📷 Screenshots
+
+(Add screenshots here later)
+
+## 🚀 Run Locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Learning Outcomes
-
-Through this project, I learned:
-
-- Reusable component architecture
-- Vue Props
-- Computed Properties
-- Vue Reactivity
-- CRUD Operations
-- Local Storage
-- Client-side data handling
-
-## Author
+## 👨‍💻 Author
 
 **Rajat Dhar Dwivedi**
+
+GitHub:
+https://github.com/Rishi-raj21
