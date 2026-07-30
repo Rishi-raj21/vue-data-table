@@ -1,38 +1,58 @@
-# vue-data-table
+# Reusable Data Table Application
 
-This template should help get you started developing with Vue 3 in Vite.
+A reusable Data Table application built using **Vue 3**, **Vuetify**, and **Vite**. This project demonstrates reusable component design with modern frontend development practices.
 
-## Recommended IDE Setup
+## Features
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Reusable `BaseDataTable` component
+- Dynamic columns using Props
+- Search functionality
+- Client-side sorting
+- Pagination
+- Add new records
+- Edit existing records
+- Delete records
+- Executive Summary Dashboard
+- Live metrics using Computed Properties
+- Reactive UI updates
+- Local Storage persistence
+- Responsive UI using Vuetify
 
-## Recommended Browser Setup
+## Datasets
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+The reusable table is demonstrated using four different datasets:
 
-## Customize configuration
+- 📦 Inventory Management
+- 💳 Financial Transactions
+- 📋 Task / Project Management
+- 🎫 Customer Support Tickets
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Tech Stack
 
-## Project Setup
+- Vue 3
+- Vuetify
+- Vite
+- JavaScript
 
-```sh
+## Installation
+
+```bash
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+## Learning Outcomes
 
-```sh
-npm run build
-```
+Through this project, I learned:
+
+- Reusable component architecture
+- Vue Props
+- Computed Properties
+- Vue Reactivity
+- CRUD Operations
+- Local Storage
+- Client-side data handling
+
+## Author
+
+**Rajat Dhar Dwivedi**
